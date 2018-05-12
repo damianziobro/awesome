@@ -11,7 +11,9 @@ function Layout({ children, data }) {
         title={data.site.siteMetadata.title}
         meta={[
           { name: 'description', content: 'Awesome website' },
-          { name: 'keywords', content: 'sample, something' },
+        ]}
+        link={[
+          { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans|Raleway:200,600'}
         ]}
       />
       <div>

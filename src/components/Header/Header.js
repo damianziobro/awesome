@@ -7,7 +7,7 @@ import './Header.sass';
 
 function Header() {
   return (
-    <header>
+    <header className="header">
       <Logo />
       <Nav />
     </header>

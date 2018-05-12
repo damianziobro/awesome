@@ -6,7 +6,7 @@ import '../pages-sass/index.sass';
 
 function IndexPage() {
   return (
-    <div className="a">
+    <div>
       <Header />
     </div>
   );

@@ -1,0 +1,47 @@
+@import "../../styles/_variables.sass"
+    
+.nav
+    &__list
+        padding: 1em
+        margin: 1em
+        display: flex
+        justify-content: center
+        align-items: center
+        list-style-type: none
+
+    &__link
+        padding: .5em 1em 0
+        text-transform: uppercase
+        text-decoration: none
+        font-family: 'Raleway', sans-serif
+        font-weight: 600
+        font-size: 1.8em
+        color: $white
+        display: flex
+        flex-direction: column
+
+        &--border
+            border: 3px solid $white
+            border-radius: 5px
+            padding-bottom: .5em
+            transition: 1s
+        
+        &--border::after
+            display: none
+        
+        &--border:hover
+            background-color: $white
+            color: $black
+
+    &__link::after
+        content: ""
+        margin-top: .5em
+        background-color: $white
+        height: 3px
+        width: 100%
+        transition: 1.5s
+        transform: scaleX(0)
+        transform-origin: left
+
+    &__link:hover::after
+        transform: scaleX(1)
