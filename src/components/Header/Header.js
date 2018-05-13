@@ -6,12 +6,12 @@ import Nav from '../Nav/Nav';
 import './Header.sass';
 
 function Header() {
-  return (
-    <header className="header">
-      <Logo />
-      <Nav />
-    </header>
-  );
-};
+	return (
+		<header className="header">
+			<Logo />
+			<Nav />
+		</header>
+	);
+}
 
 export default Header;

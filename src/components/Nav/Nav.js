@@ -19,7 +19,7 @@ function Nav() {
                 </li>
                 <li className="nav__item">
                     <Link className="nav__link" to="/">
-                        Awesome
+                        About
                     </Link>
                 </li>
                 <li className="nav__item">

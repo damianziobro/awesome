@@ -10,7 +10,7 @@
         list-style-type: none
 
     &__link
-        padding: .5em 1em 0
+        padding: .5em 2em 0
         text-transform: uppercase
         text-decoration: none
         font-family: 'Raleway', sans-serif
@@ -25,23 +25,24 @@
             border-radius: 5px
             padding-bottom: .5em
             transition: 1s
+
+            &::after
+                display: none
         
-        &--border::after
-            display: none
+            &:hover
+                background-color: $white
+                color: $black
+
+        &:hover
+            &::after
+                transform: scaleX(1)
         
-        &--border:hover
+        &::after
+            content: ""
+            margin-top: .5em
             background-color: $white
-            color: $black
-
-    &__link::after
-        content: ""
-        margin-top: .5em
-        background-color: $white
-        height: 3px
-        width: 100%
-        transition: 1.5s
-        transform: scaleX(0)
-        transform-origin: left
-
-    &__link:hover::after
-        transform: scaleX(1)
+            height: 3px
+            width: 100%
+            transition: 1.5s
+            transform: scaleX(0)
+            transform-origin: left

@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
+import Header from '../components/Header/Header';
+
 import './index.sass';
 
 function Layout({ children, data }) {
@@ -10,15 +12,14 @@ function Layout({ children, data }) {
       <Helmet
         title={data.site.siteMetadata.title}
         meta={[
-          { name: 'description', content: 'Awesome website' },
+          { name: 'description', content: 'Awesome website' }
         ]}
         link={[
           { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans|Raleway:200,600'}
         ]}
       />
-      <div>
-        {children()}
-      </div>
+      <Header />
+      {children()}
     </div>
   );
 };
